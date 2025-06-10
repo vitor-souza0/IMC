@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & .user-input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        & label {
+            color: gray;
+        }
+
+        & input {
+            padding: 14px 26px;
+            border-radius: 6px;
+            outline: none;
+            border: 1px solid red;
+            width: 100%;
+        }
+    }
+
+    & #cal {
+        background-color: palevioletred;
+        border-radius: 6px;
+        padding: 13px;
+        font-weight: bold;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    & #cal:hover {
+        background-color: rgb(214, 114, 114);
+
+    }
+}
+
+
+
+main {
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.res {
+    color: gray;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & hr {
+        border-color: rgb(255, 124, 168);
+    }
+
+    & div {
+        display: flex;
+        color: gray;
+    }
+
+    & p {
+        width: 254px;
+        margin: auto;
+    }
+
+    & div:first-child {
+        font-weight: 700;
+    }
+
+
+
+}
+
+.tabela {
+    width: 510px;
+    display: flex;
+    justify-content: space-between;
+    border: #f4f4f4 1px solid;
+
+    & p {
+        padding: 12px;
+        width: 100%;
+        color: gray;
+    }
+
+
+    & .imc {
+        width: 260px;
+
+        & p:nth-child(odd) {
+            background-color: #f4f4f4;
+        }
+
+        & p:first-child {
+            color: palevioletred;
+            font-weight: 700;
+        }
+    }
+
+    & .classificacao {
+        width: 260px;
+
+        & p:nth-child(odd) {
+            background-color: #f4f4f4;
+        }
+
+        & p:first-child {
+            color: palevioletred;
+            font-weight: 700;
+        }
+    }
+
+}
